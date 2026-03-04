@@ -293,4 +293,8 @@ footer a:link, footer a:visited {
             }
             img { max-width: 100%;
             }
+
+.myclock {
+	color: white;
+}
             

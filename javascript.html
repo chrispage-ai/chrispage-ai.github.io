@@ -2,19 +2,51 @@
 <html lang="en">
     <head>
         <script> 
-        function showAlert(){ alert ("hai! welcome to my webpage!"); } </script>
-        <script> 
-        function showAlert(){ var my Text="kitty unicorn rainbows"; alert (kitty unicorn rainbows);}</script>
+          
+            function updateTime(){ // get all parts of the current time 
+            var now=new Date();
+            var hours=now.getHours();
+            var minutes=now.getMinutes();  
+            var seconds=now.getSeconds();
+            var currentTime =now.getSeconds();
+            //splice them together
+                var currentTime = hours + ':' + minutes + ':' + seconds; 
+            // get the clock div 
+                var myClock = document.getElementById('clock');
+                // write the currentTime string 
+            myClock.innerHTML = currentTime;
+            }
+            
+        function showAlert(){ alert ("hai! welcome to my webpage!"); } 
+    
+        function showAlert(){ var myText="kitty unicorn rainbows"; alert (myText);}
+        </script>
         <meta charset="UTF-8" />
         <title>web portfolio: chris jennings javascript page</title>
-         <link rel="stylesheet" href="styles/style.css">
+      <link rel="stylesheet" href="styles/style.css">
     </head>
-    <body>
-        <body onload="showAlert()">
-        <!-- The content of your web page will go here -->
-    <div id="skipnav"> <a href="#main">skip to main content</a>
+    <body onload="updateTime()">
+        <div id="skipnav"> <a href="#main">skip to main content</a>
+        <nav> 
+        <ul>
+            <li> <a href="accessibility.html">Accessibility</a> </li>
+            <li><a href="useability.html"> Usability</a> </li>
+            <li> <a href="graphics.html">Graphics</a> </li>
+            <li> <a href="javascript.html">Javascript</a></li>
+            <li><a href="tools.html"> Tools</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="graphics.html">Graphics</a></li>
+            </ul>
+          
+        </nav>    
         </div>
+        
+        <!-- The content of your web page will go here -->
+   
         <br />
+        <button onclick="showAlert()">show alert</button>
+        <br />
+             <div id="clock" class="myclock"></div>
        
     </body>
 </html>
