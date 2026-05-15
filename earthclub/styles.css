@@ -1,0 +1,36 @@
+.title {
+    color: #1fc31f;
+}
+#bannerimage {
+  width: 100%;
+  background-image: url(http://s30.postimg.org/x0ne0p5wx/bootsrap.png);
+  height: 100px;
+  background-color: #2a5a09;
+  background-position: center;
+}
+#header {
+    background: #638f4c;
+    height: auto;
+    padding: 100px 100px
+}
+h1 {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+h2 { 
+color: white;
+font-family: Helvetica, sans-serif;
+text-align: center;
+}
+li {
+    color:darkgreen;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+
+a {
+    color: darkgreen
+
+
+}
